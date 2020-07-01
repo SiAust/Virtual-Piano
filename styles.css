@@ -1,3 +1,8 @@
+@font-face {
+    font-family: myFont;
+    src: url("fonts/Yellowtail-Regular.ttf");
+}
+
 html {
     height: 100%;
     margin: auto;
@@ -15,6 +20,15 @@ div {
     justify-content: center;
     height: 100%;
     text-align: center;
+}
+
+h2 {
+    position: absolute;
+    top: 20%;
+    left: 44%;
+    margin: auto;
+    font-family: myFont, monospace;
+    font-size: 30px;
 }
 
 kbd {
