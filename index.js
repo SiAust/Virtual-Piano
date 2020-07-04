@@ -29,6 +29,15 @@ let firedT = false;
 let firedY = false;
 let firedU = false;
 
+let volume = 0.5;
+
+let slider = document.getElementById("myRange");
+
+slider.oninput = function() {
+    volume = this.value / 100;
+    console.log("slider value= " + this.value / 100);
+}
+
 document.addEventListener("keypress", function (event) {
     if (event.key === "a") {
         if (!firedA) {
@@ -36,7 +45,7 @@ document.addEventListener("keypress", function (event) {
             keyA.setAttribute("class", "active-white-key");
             let audio = document.createElement("AUDIO");
             audio.src = "./sounds/A.mp3";
-            audio.volume = 0.5;
+            audio.volume = volume;
             audio.play();
             console.log("The '" + event.key + "' has been pressed.");
         }
@@ -47,7 +56,7 @@ document.addEventListener("keypress", function (event) {
             keyS.setAttribute("class", "active-white-key");
             let audio = document.createElement("AUDIO");
             audio.src = "./sounds/S.mp3";
-            audio.volume = 0.5;
+            audio.volume = volume;
             audio.play();
             console.log("The '" + event.key + "' has been pressed.");
         }
@@ -58,7 +67,7 @@ document.addEventListener("keypress", function (event) {
             keyD.setAttribute("class", "active-white-key");
             let audio = document.createElement("AUDIO");
             audio.src = "./sounds/D.mp3";
-            audio.volume = 0.5;
+            audio.volume = volume;
             audio.play();
             console.log("The '" + event.key + "' has been pressed.");
         }
@@ -70,7 +79,7 @@ document.addEventListener("keypress", function (event) {
             keyF.setAttribute("class", "active-white-key");
             let audio = document.createElement("AUDIO");
             audio.src = "./sounds/F.mp3";
-            audio.volume = 0.5;
+            audio.volume = volume;
             audio.play();
             console.log("The '" + event.key + "' has been pressed.");
         }
@@ -81,7 +90,7 @@ document.addEventListener("keypress", function (event) {
             keyG.setAttribute("class", "active-white-key");
             let audio = document.createElement("AUDIO");
             audio.src = "./sounds/G.mp3";
-            audio.volume = 0.5;
+            audio.volume = volume;
             audio.play();
             console.log("The '" + event.key + "' has been pressed.");
         }
@@ -93,7 +102,7 @@ document.addEventListener("keypress", function (event) {
             keyH.setAttribute("class", "active-white-key");
             let audio = document.createElement("AUDIO");
             audio.src = "./sounds/H.mp3";
-            audio.volume = 0.5;
+            audio.volume = volume;
             audio.play();
             console.log("The '" + event.key + "' has been pressed.");
         }
@@ -105,7 +114,7 @@ document.addEventListener("keypress", function (event) {
             keyJ.setAttribute("class", "active-white-key");
             let audio = document.createElement("AUDIO");
             audio.src = "./sounds/J.mp3";
-            audio.volume = 0.5;
+            audio.volume = volume;
             audio.play();
             console.log("The '" + event.key + "' has been pressed.");
         }
@@ -117,7 +126,7 @@ document.addEventListener("keypress", function (event) {
             keyW.setAttribute("class", "active-black-key");
             let audio = document.createElement("AUDIO");
             audio.src = "./sounds/W.mp3";
-            audio.volume = 0.5;
+            audio.volume = volume;
             audio.play();
             console.log("The '" + event.key + "' has been pressed.");
 
@@ -131,7 +140,7 @@ document.addEventListener("keypress", function (event) {
             keyE.setAttribute("class", "active-black-key");
             let audio = document.createElement("AUDIO");
             audio.src = "./sounds/E.mp3";
-            audio.volume = 0.5;
+            audio.volume = volume;
             audio.play();
             console.log("The '" + event.key + "' has been pressed.");
         }
@@ -142,7 +151,7 @@ document.addEventListener("keypress", function (event) {
             keyT.setAttribute("class", "active-black-key");
             let audio = document.createElement("AUDIO");
             audio.src = "./sounds/T.mp3";
-            audio.volume = 0.5;
+            audio.volume = volume;
             audio.play();
             console.log("The '" + event.key + "' has been pressed.");
 
@@ -154,7 +163,7 @@ document.addEventListener("keypress", function (event) {
             keyY.setAttribute("class", "active-black-key");
             let audio = document.createElement("AUDIO");
             audio.src = "./sounds/Y.mp3";
-            audio.volume = 0.5;
+            audio.volume = volume;
             audio.play();
             console.log("The '" + event.key + "' has been pressed.");
 
@@ -166,7 +175,7 @@ document.addEventListener("keypress", function (event) {
             keyU.setAttribute("class", "active-black-key");
             let audio = document.createElement("AUDIO");
             audio.src = "./sounds/U.mp3";
-            audio.volume = 0.5;
+            audio.volume = volume;
             audio.play();
             console.log("The '" + event.key + "' has been pressed.");
 
